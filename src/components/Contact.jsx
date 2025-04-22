@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { styles } from "../style"
 import { SectionWrapper } from "../hoc"
 import { EarthCanvas } from "./canvas"
-import { slideIn } from "../utils/motion"
+import { slideIn } from "../Utils/motion"
 import { StarsCanvas } from "./canvas"
 import { Toaster, toast } from 'react-hot-toast'
 import emailjs from '@emailjs/browser'
