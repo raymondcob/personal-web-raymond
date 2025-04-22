@@ -1,4 +1,3 @@
-
 import Tilt from "react-parallax-tilt"
 import { motion } from "framer-motion"
 import { styles } from "../style"
@@ -10,29 +9,32 @@ import { IconBrandGithub } from "@tabler/icons-react"
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_demo_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className="w-full sm:w-[85%] md:w-[100%] lg:w-[calc(33.333%-1rem)]"
+    >
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-[#151030] rounded-2xl w-full sm:w-[85%] md:w-[45%] lg:w-[30%] shadow-lg"
+        className="bg-[#151030] rounded-2xl w-full h-full shadow-lg"
         style={{ boxShadow: "0px 35px 120px -15px #211e35" }}
       >
-        <div className="relative w-full h-[250px] ">
+        <div className="relative w-full h-[250px]">
           <img src={image || "/placeholder.svg"} alt={name} className="w-full h-full object-cover rounded-2xl" />
         </div>
         <div className="mt-2 p-4">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-6 text-[#aaa6c3] text-[15px] ">{description}</p>
+          <p className="mt-6 text-[#aaa6c3] text-[15px]">{description}</p>
         </div>
 
         <div className="mt-1 flex flex-wrap gap-2 pl-2">
           {tags.map((tags) => (
             <div
               key={tags.name}
-              className="flex justify-start items-center rounded-3xl green-pink-gradient p-[1px] shadoww-lg "
+              className="flex justify-start items-center rounded-3xl green-pink-gradient p-[1px] shadoww-lg"
             >
               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#151030] text-white">
                 <p className="font-normal text-[14px] text-[#fff]">{tags.name}</p>
@@ -46,7 +48,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             <a
               href={live_demo_link}
               target="_blank"
-              className="flex items-center font-medium gap-2 cursor-pointer hover:text-gray-300 "
+              className="flex items-center font-medium gap-2 cursor-pointer hover:text-gray-300"
               rel="noreferrer"
             >
               <span className="flex justify-center items-center rounded-full bg-blue-950 w-9 h-9 p-2">
@@ -60,7 +62,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             <a
               href={source_code_link}
               target="_blank"
-              className="flex items-center font-medium gap-2 cursor-pointer hover:text-gray-300 "
+              className="flex items-center font-medium gap-2 cursor-pointer hover:text-gray-300"
               rel="noreferrer"
             >
               <span className="flex justify-center items-center rounded-full bg-gray-600 w-9 h-9 p-2">
@@ -90,7 +92,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap justify-center gap-7 max-w-7xl mx-auto">
+      <div className="mt-20 flex flex-wrap justify-center lg:justify-between gap-4 max-w-7xl mx-auto">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
