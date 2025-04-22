@@ -22,6 +22,5 @@ A modern 3D portfolio website showcasing my frontend development projects and sk
 
 ## 📝 Contact
 
-- Email: raymondcob14@gmail.com
 - LinkedIn: [Raymond Cob](https://www.linkedin.com/in/raymond-cob/)
 - GitHub: [raymondcob](https://github.com/raymondcob)
