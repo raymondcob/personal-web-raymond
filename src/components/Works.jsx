@@ -23,7 +23,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
         style={{ boxShadow: "0px 35px 120px -15px #211e35" }}
       >
         <div className="relative w-full h-[250px]">
-          <img src={image || "/placeholder.svg"} alt={name} className="w-full h-full object-cover rounded-2xl" />
+          <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" />
         </div>
         <div className="mt-2 p-4">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>

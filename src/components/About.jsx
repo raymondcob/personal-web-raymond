@@ -70,7 +70,7 @@ const About = () => {
 
           {/* Tech Stack Pills */}
           <div className="flex flex-wrap gap-2 mb-4">
-            {["React", "Tailwind CSS", "Firebase", "Angular"].map((tech) => (
+            {["React", "Tailwind CSS", "Firebase"].map((tech) => (
               <span
                 key={tech}
                 className="px-3 py-1 bg-[#2a1b4d] text-white rounded-full text-sm border border-[#915eff]/30"
