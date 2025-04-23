@@ -64,7 +64,7 @@ const About = () => {
           </p>
 
           <p className="text-gray-300 text-[17px] leading-[30px] mb-4">
-            I adapt quickly to any frontend tech stack—whether traditional or modern—and I'm constantly exploring better
+            I adapt quickly to any frontend tech stack—whether traditional or modern, and I'm constantly exploring better
             ways to build. Currently, I enjoy creating web applications using:
           </p>
 
@@ -81,7 +81,7 @@ const About = () => {
           </div>
 
           <p className="text-gray-300 text-[17px] leading-[30px]">
-            For me, frontend development transcends mere coding—it's about crafting experiences that people genuinely
+            For me, frontend development transcends mere coding, it's about crafting experiences that people genuinely
             enjoy interacting with.
           </p>
         </motion.div>
